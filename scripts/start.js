@@ -10,8 +10,6 @@ process.on('unhandledRejection', err => {
 });
 // Ensure environment variables are read.
 require('../config/env');
-require('dotenv').config({ path: 'variables.env' });
-const configs = require('./config');
 const fs = require('fs');
 const chalk = require('chalk');
 const webpack = require('webpack');
