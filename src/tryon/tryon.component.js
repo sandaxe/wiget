@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from "./tryon.css";
 import $ from "jquery";
-const cred = require("./credentails.json");
 const axios = require('axios');
 //const {Storage} = require('@google-cloud/storage');
 //import * as storage from "@google-cloud/storage";
