@@ -1,0 +1,251 @@
+:root {
+  --customBg: #333333;
+  --customFg: #FFF;
+  --light-color: #bdbbbb;
+  --customBg-theme: #333333;
+  --customFg-theme: #FFF;
+  --light-color-theme: #bdbbbb;
+  --gridOrderTableValue: 0.6fr 2.8fr 1fr 1fr 1fr 0.6fr 1fr auto;
+  --gridOrderHeadTableValue: 0px 430px 1fr 1fr 1fr 67px 200px auto;
+  --gridOtherOrderTableValue: 1.2fr 1.7fr 1.6fr 1.7fr 1.8fr 73px;
+  --gridHistoryOrderTableValue: 0.7fr 2.8fr 0.9fr 0.7fr 1fr 1fr 73px;
+  --lensOrderInnerGrid: 1fr 1fr 1fr;
+}
+@import './layout.css';
+
+/* ROBOTO FONTS */
+@font-face {
+  font-family: Roboto-Regular; src: url('./fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Roboto-Light; src: url('./fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: Roboto-Medium; src: url('./fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: Roboto-Bold; src: url('./fonts/Roboto-Bold.ttf');
+}
+
+/* Proxima Nova */
+@font-face {
+  font-family: Proxima-Regular; src: url('./fonts/proxima/Proxima-Nova-Regular.ttf');
+}
+@font-face {
+  font-family: Proxima-Semibold; src: url('./fonts/proxima/Proxima-Nova-Semibold.ttf');
+}
+@font-face {
+  font-family: Proxima-Thin; src: url('./fonts/proxima/Proxima-Nova-Thin.ttf');
+}
+@font-face {
+  font-family: Proxima-Bold; src: url('./fonts/proxima/Proxima-Nova-Bold.ttf');
+}
+
+ 
+
+@font-face {
+  font-family: demo-ne; src: url('./fonts/demo-ne.ttf');
+}
+@font-face {
+  font-family: electrolize; src: url('./fonts/Electrolize-Regular.ttf');
+}
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  user-select: text; /* supported by Chrome and Opera */
+   -webkit-user-select: text; /* Safari */
+   -khtml-user-select: text; /* Konqueror HTML */
+   -moz-user-select: text; /* Firefox */
+   -ms-user-select: text; /* Internet Explorer/Edge */
+}
+
+body{
+  font-size: 1.4rem;
+  font-family:'proxima-nova';
+}
+
+html,body {
+  color: rgb(#36344c);
+  background:white;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.rootContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: --customFg-theme;
+}
+
+.socialContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+
+.hr_wrapper{
+	width: 300px;
+}
+.hr_wrapper h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.hr_wrapper h2.background_hr {
+  position: relative;
+  z-index: 1;
+}
+.hr_wrapper h2.background_hr:before {
+  border-top: 2px solid #fff;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+.hr_wrapper h2.background_hr span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #423ea1;
+	color: white;
+  padding: 0 15px;
+}
+.hr_wrapper h2.double_hr:before {
+  /* this is just to undo the :before styling from above */
+  border-top: none;
+}
+.hr_wrapper h2.double_hr:after {
+  border-bottom: 1px solid #CBD5E0;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+
+canvas {
+  position: absolute;
+  background-color: transparent;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top:0;
+}
+
+video {
+  position: absolute;
+  background-color: transparent;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.sketch-picker{
+  margin-top: 100px !important;
+}
+h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.59;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #36344c;
+}
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.58;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #36344c;
+}
+h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #36344c;
+}
+h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #36344c;
+}
+#_wrapper {
+  position: absolute;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+#_content {
+  position: absolute;
+  /* width: 100% !important; */
+  /* height: 100% !important; */
+  background-color: #f7f7f7;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@media only screen and (min-width:1600px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1920px) and (max-width: 1960px) {
+  .hr_wrapper h2.background_hr span {
+    background: #554fa6;
+  }
+}
+

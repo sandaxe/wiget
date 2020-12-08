@@ -1,0 +1,280 @@
+.chip {
+  padding: calc(4px / 2) 8px;
+  display: flex;
+  align-items: center;
+  background: rgb(204, 248, 226);
+  border-radius: 3px;
+}
+
+.chip > .text :first-child {
+  flex: 1;
+}
+
+.chip > .icon {
+  margin-left: 12px;
+}
+
+/* .chip > .icon > span {
+  display: grid;
+  align-items: center;
+}
+
+.chip > .icon svg{
+  fill: rgb(var(--gray-6));
+  height: 1.2rem;
+  width: 1.2rem;
+} */
+
+.placeholder {
+  max-width: 15rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(150, 162, 186);
+}
+
+.multiSelect {
+  border-bottom: solid 1px rgb(213, 216, 223);
+  border-radius: 0.3rem;
+  /* min-height: 3.2rem; */
+  background: rgb(white);
+  cursor: pointer;
+  outline: none;
+  padding: 3px 0 5px;
+}
+
+.multiSelect.tiny input {
+  font-size: 9px;
+  font-weight: 400;
+  color: rgb(38, 48, 69);
+  width: 100%;
+}
+
+.multiSelect.tiny {
+  min-height: 1.5rem;
+}
+
+.multiSelect.tiny .selectBox {
+  padding: 0 4px;
+}
+
+.multiSelect.small {
+  min-height: 2.6rem;
+}
+
+/* .multiSelect:focus,
+.multiSelect:hover{
+  box-shadow: 0px 2px 5px rgba(224, 227, 231, 0.7);
+} */
+
+/* .multiSelect:focus{
+  border: solid 1px rgb(115, 125, 143);
+} */
+
+.multiSelect.disabled {
+  border-bottom: none !important;
+  cursor: default;
+}
+
+/* .multiSelect.disabled:focus,
+.multiSelect.disabled:hover{
+  box-shadow: none;
+  border-color: rgb(213, 216, 223);
+} */
+
+.multiSelect.disabled svg {
+  fill: rgb(ar(--gray-14));
+  display: none;
+}
+
+.multiSelect.textOnly {
+  border-color: transparent;
+  min-height: auto;
+  background: transparent;
+}
+
+/* .multiSelect.textOnly:focus,
+.multiSelect.textOnly:hover{
+  border-color: rgb(210, 228, 255);
+  box-shadow: none;
+} */
+.caret {
+  color: #333333;
+}
+.selectBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  height: inherit;
+  min-height: inherit;
+  padding: 0;
+}
+
+.multiSelect.textOnly .selectBox {
+  padding: 0 4px;
+  color: rgb(0, 95, 236);
+}
+
+.selectBox.multi {
+  padding: 0 8px;
+}
+
+.caret svg {
+  fill: rgb(115, 125, 143);
+}
+
+.multiSelect.textOnly .caret svg {
+  fill: rgb(0, 95, 236);
+}
+
+.selectedOptions {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  outline: none;
+  align-items: center;
+}
+
+.selectedOptions > * {
+  margin: 4px 4px 4px 0;
+}
+
+.selectedOptions > input {
+  margin: 0 4px;
+}
+
+.selectedOptions > :first-child {
+  margin-left: unset;
+}
+
+.optionContainer {
+  box-shadow: 0px 2px 10px rgba(115, 125, 143, 0.2);
+  background: white;
+  max-width: 50rem;
+  font-family: Proxima-Regular;
+}
+
+.optionList {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-height: 25rem;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 12px;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+}
+
+.option.active,
+.option:hover {
+  background: rgb(244, 245, 248);
+}
+
+.option.createNew {
+  color: rgb(0, 95, 236);
+  border-top: solid 1px rgb(224, 227, 231);
+  text-align: center;
+}
+
+.option .checkbox {
+  width: 100%;
+}
+
+.searchBox {
+  width: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  height: calc(100% - 2px);
+  z-index: 2;
+  outline: none;
+  letter-spacing: 0.3;
+  color: rgb(38, 48, 69);
+}
+
+.selectedOptions .searchBox {
+  width: min-content;
+  position: relative;
+}
+
+.searchBox::placeholder {
+  color: 38, 48, 69;
+  opacity: 1;
+}
+
+.inlineSearchBox {
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  padding: 12px;
+  align-items: center;
+}
+
+.inlineSearchBox input {
+  border: none;
+}
+
+.inlineSearchBox svg {
+  display: grid;
+}
+
+.singleSelect {
+  font-family: Proxima-Regular;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-right: 1rem;
+  height: 100%;
+  align-items: center;
+  color: rgb(38, 48, 69);
+}
+
+.multiSelect.textOnly .singleSelect {
+  color: rgb(0, 95, 236);
+}
+
+.singleSelect > .closeIcon {
+  display: grid;
+  align-items: center;
+}
+
+.singleSelect .closeIcon svg {
+  fill: rgb(85, 95, 116);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.iconCenter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 567px) and (min-width: 280px) {
+  .optionContainer {
+    box-shadow: 0px 2px 10px rgba(115, 125, 143, 0.2);
+    background: white;
+    max-width: 100%;
+    position: fixed;
+    font-family: Proxima-Regular;
+  }
+}
+@media (max-width: 990px) and (min-width: 568px) {
+  .optionContainer {
+    box-shadow: 0px 2px 10px rgba(115, 125, 143, 0.2);
+    background: white;
+    max-width: 100%;
+    position: fixed;
+    font-family: Proxima-Regular;
+  }
+}

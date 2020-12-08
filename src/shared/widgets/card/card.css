@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../../../styles/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../../../styles/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../../../styles/fonts/Roboto-Light.ttf");
+}
+.card {
+  width: 273px;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 1px #229fe6;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+}
+.cardIcon {
+  width: 85px;
+  height: 71px;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-size: 16px !important;
+  color: #2a1e1e;
+  margin: 9px 0px;
+}
+
+.cardDescription {
+  font-size: 13px;
+  color: #707070;
+  width: 200px;
+  line-height: 20px;
+}
+.bodyOfCard {
+  display: flex;
+}
+
+.arrow {
+  align-self: flex-end;
+  position: relative;
+  top: -10px;
+  right: -20px;
+  cursor: pointer;
+}
+
+/* Pricing Card */
+.pricingCard {
+  width: 225.5px;
+  height: 425px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+  font-family: Montserrat-Bold;
+  border-radius: 2px;
+}
+.pricingCard:hover {
+  transform: scale(1.07);
+  transition: 0.4s;
+  box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1.2px #00d28a;
+  background-color: #ffffff;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.recommended {
+  width: 70.9px;
+  height: 13.4px;
+  border-radius: 1.7px;
+  background-color: #ffb34b;
+  color: white;
+  font-size: 8px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.recommended p {
+  align-self: center;
+}
+.notrecommend {
+  width: 70.9px;
+  height: 13.4px;
+  border-radius: 1.7px;
+  color: white;
+  font-size: 8px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.pricingCardTitle {
+  color: #242f40;
+}
+.totalPrice {
+  margin-top: 15px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.price {
+  font-size: 26px;
+}
+.pricePer {
+  align-self: flex-end;
+  font-size: 9.3px;
+  color: #5b6b82;
+}
+
+.discountedPrice {
+  text-decoration: line-through;
+  color: #cccccc;
+  font-size: 14px;
+}
+.features {
+  font-family: Roboto-Light;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.38;
+  letter-spacing: normal;
+  color: #5b6b82;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.features ul {
+  list-style-image: url("../../images/svg/roundcheckcircleoutline.svg");
+}
+
+.actionButtons {
+  position: absolute;
+  bottom: 30px;
+}
+
+.strikedprice {
+  font-size: 16px;
+  text-decoration:line-through;
+  padding: 10px;
+}
+
+.gstName {
+  font-size: 10px;
+}
+
+@media (max-width: 567px) and (min-width: 280px) {
+  .actionButtons {
+    position: relative;
+    bottom: 0px;
+  }
+  .pricingCard {
+    width: 100%;
+    height: 425px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+    font-family: Montserrat-Bold;
+    border-radius: 2px;
+  }
+  .card {
+    width: 273px;
+    height: 180px;
+    border-radius: 4px;
+    border: solid 1px #229fe6;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: auto;
+  }
+}

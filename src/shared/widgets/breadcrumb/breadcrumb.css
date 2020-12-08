@@ -1,0 +1,17 @@
+.breadCrumb {
+  display: grid;
+  align-items: center;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+}
+
+.breadCrumb .override:last-child {
+  display: none;
+}
+
+@media (max-width: 567px) and (min-width: 280px) {
+  .breadCrumb {
+    grid-auto-columns: auto;
+  }
+}

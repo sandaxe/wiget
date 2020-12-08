@@ -1,0 +1,361 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 102;
+  background: rgba(3, 8, 18, 0.8);
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+  font-family: ProximaNova;
+  overflow: hidden;
+}
+.modalContainer {
+  display: grid;
+  position: fixed;
+  z-index: 103;
+  grid-template-rows: 5.2rem 1fr 5.6rem;
+  width: 50rem;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  transition: all 0.3s ease;
+  max-height: 80vh;
+  /* height: max-content; */
+  text-align: left;
+  border-radius: 3px;
+}
+.modalHeader {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1.2rem;
+  padding: 0 2rem;
+  background: #fff;
+  border-bottom: 1px solid rgb(224, 227, 231);
+}
+.modalHeader svg {
+  cursor: pointer;
+}
+
+.noLinemodalHeader {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1.2rem;
+  padding: 0 2rem;
+  background: #fff;
+}
+.noLinemodalHeader svg {
+  cursor: pointer;
+}
+.modalContent {
+  padding: 2rem;
+  display: grid;
+  background: #fff;
+  min-height: 5rem;
+}
+.modalFooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1.2rem;
+  justify-content: end;
+  padding: 1.2rem 2rem;
+  border-top: 1px solid rgb(224, 227, 231);
+}
+.modalFooter .secondaryButton {
+  grid-column-start: -2;
+  grid-column-end: -3;
+}
+.modalFooter .normalButton {
+  grid-column-start: -1;
+  grid-column-end: -2;
+}
+.headerTypeModal {
+  grid-template-rows: 5.2rem auto;
+}
+
+.footerTypeModal {
+  grid-template-rows: auto 5.6rem;
+}
+
+.large {
+  width: 80rem;
+}
+.semilarge{
+  width: 72rem;
+}
+.medium {
+  width: 52rem;
+}
+
+.small {
+  width: 40rem;
+}
+
+.big {
+  width: 110rem;
+}
+.custom{
+  width: 80rem;
+  height: 65%;
+}
+.full {
+  width: 100%;
+  max-height: 100%;
+}
+
+.createModel {
+  position: fixed;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+  top: 0;
+}
+
+.createModel .formContent .closeModel {
+  height: 35px;
+  width: 35px;
+  background-color: #333333;
+  color: #ffffff;
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.createModelContent {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  min-height: 100%;
+}
+/* 
+.emptyContent {
+}
+ */
+.formContent {
+  background: #fff;
+  display: grid;
+  grid-template-rows: 3.8rem auto;
+  position: absolute;
+  width: 700px;
+  max-width: 100%;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 1px solid #e3e3e3;
+  border-top: 2px solid #333333;
+}
+.FilterPop {
+  display: grid;
+  grid-template-rows: 3.8rem auto;
+  position: absolute;
+  width: 369px;
+  max-width: 100%;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 1px solid #e3e3e3;
+  border-top: 2px solid #333333;
+}
+.FilterPopup{
+  display: grid;
+  grid-template-rows: 3.8rem auto;
+  position: absolute;
+  width: 256px;
+  max-width: 100%;
+  right: 0px;
+  padding: 10px;
+  top: 0px;
+  height: 100%;
+  overflow-y: scroll;
+  border-radius: 4px;
+  background-color: #f1fcff;
+}
+.formClose {
+  height: 3.8rem;
+  position: relative;
+  background: #333;
+}
+.formMainContent {
+  box-shadow: 0 4px 15px 0 rgba(100, 110, 130, 0.1);
+  height: calc(100% - 3.8rem);
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+}
+
+/* width */
+.formMainContent::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.formMainContent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.formMainContent::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+/* Handle on hover */
+.formMainContent::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.rectangle {
+  height: 76px;
+  background-color: #f3f8ff;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  padding: 0 3rem;
+  grid-column-gap: 3rem;
+}
+/* 
+.createModel:after {
+    content: " ";
+    display: block;
+    background: #c00;
+    height: 29px;
+    width: 103%;
+    top:0;
+    position: absolute;
+} */
+
+.body {
+  height: 600px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.closeModelsm {
+  padding: 20px 20px;
+}
+
+@media (max-width: 567px) and (min-width: 280px) {
+  .createModel .formContent .closeModel {
+    height: 30px;
+    width: 30px;
+    background-color: #333333;
+    color: #ffffff;
+    position: absolute;
+    left: -1px;
+    z-index: 99;
+    top: -2px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .rectangle {
+    height: 76px;
+    background-color: #f3f8ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 3rem;
+    grid-column-gap: 3rem;
+  }
+  .modalContainer{
+    max-height: 100%;
+  }
+}
+@media (min-width:280px) and (max-width:320px){
+  .modalFooter{
+    position: absolute;
+    top:500px;
+  }
+}
+@media (min-width:320px) and (max-width:480px){
+  .modalFooter{
+    position: absolute;
+    top:500px;
+  }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 799px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .modalContainer{
+      max-height: 100%;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 799px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .modalContainer{
+      max-height: 100%;
+      overflow: hidden;
+    }
+}
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) 
+  {
+
+    .modalContainer{
+      max-height:100%;
+      max-width: 99%;
+      top:50%;
+      left:50%;
+    }
+    .modalHeader{
+      height: 60px;
+      z-index: 1;
+    }
+
+  }
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  {
+
+    .modalContainer{
+      max-height: 100%;
+      max-width: 95%;
+    }
+  }
+@media only screen and (min-device-width:1280px) and (max-device-width:1280px) and (orientation: landscape){
+  .modalContainer{
+    max-height: 99%;
+    max-width: 99%;
+    overflow-x: hidden;
+  } 
+
+  .modalHeader{
+    height: auto;
+    z-index: 1;
+  }
+}
+@media (min-device-width: 1400px){
+  .modalContainer{
+    max-height: 90%;
+  }
+}
+
+
+.hideModal {
+  display: none;
+}
+
+
+

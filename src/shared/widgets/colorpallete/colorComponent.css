@@ -1,0 +1,28 @@
+
+.selectedcolorDiv{ 
+  width: 64px;
+  height: 34px;
+  cursor: pointer;
+  border: solid 2px #5e77ff;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+.colorDiv{ 
+  width: 64px;
+  height: 34px;
+  cursor: pointer;
+  margin: 1px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.colorDiv img{
+  width: 64px;
+  height: 34px;
+}

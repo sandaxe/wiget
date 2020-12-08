@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Proxima-Bold;
+  src: url("../../../styles/fonts/proxima/Proxima-Nova-Bold.ttf");
+}
+.filterCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  font-family: Proxima-Bold;
+  align-content: center;
+  align-items: center;
+  width: 140px;
+  height: 80px;
+  font-size: 14px;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px 0 rgba(176, 166, 166, 0.5);
+  background: #fff;
+  border: 0px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.filterCard:hover{
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+}
+.filterText{
+  position: relative;
+  right: 6px;
+}
+.selected{
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14);
+  background-image: linear-gradient(169deg, #27bb85, #26d078);
+  color: #fff;
+}
+
+.filterImages{
+  height: 100%;
+  width: auto;
+  position: relative;
+  mix-blend-mode: multiply;
+  right: 4px;
+  object-fit: contain;
+}
+
+.arrowDown {
+  border-color: black transparent;
+  border-style: solid;
+  border-width: 10px 5px 0px 5px;
+  height: 0px;
+  width: 0px;
+}
+
+@media screen and (min-width: 1794px) and (max-width: 1919px){
+  .filterCard{
+    width: 173px;
+    height: 91px;
+    font-size: 16px;
+  }
+  .filterImages{
+    right: 14px;
+  }
+}
+@media screen and (min-width: 1920px) and (max-width: 1960px) {
+  .filterCard{
+    width: 173px;
+    height: 91px;
+    font-size: 16px;
+  }
+  .filterImages{
+    right: 13px;
+    height: 101%;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1250px){
+  .filterImages{
+    right: 5px;
+  }
+}

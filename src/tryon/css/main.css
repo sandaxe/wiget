@@ -1,0 +1,12 @@
+.tryoncont {
+	margin-top: 66px;
+	font-size: 1.4rem;
+	font-family: Proxima-Regular;
+	padding: 10;
+	height:100%;
+	background-color: white;
+	border-radius: 6px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}

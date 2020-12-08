@@ -1,0 +1,125 @@
+.button{
+  min-width: 10rem;
+  background:  rgb(var(--old-white));
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  height: 3.2rem;
+  line-height: 3rem;
+}
+
+.normalButton,
+.normalButton.outline:hover {
+  background:  rgb(var(--dusk));
+  color: rgb(var(--old-white))
+}
+
+.normalButton.outline{
+  border: 1px solid  rgb(var(--dusk));
+  background: transparent;
+  color: rgb(var(--dusk));
+}
+
+.actionButton {
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(60deg, rgb(var(--primary-right-main)), rgb(var(--primary-left-main)));
+  border-image-slice: 1;
+  color: rgb(var(--primary-left-light15));
+  background-image: linear-gradient(60deg, rgba(var(--primary-right-main), 0.1), rgb(var(--primary-left-main), 0.1));
+}
+.actionButton.outline{
+  background: transparent;
+  border: 1px solid rgb(var(--medium-green));
+  color: rgb(var(--medium-green));
+}
+
+.secondaryButton,
+.secondaryButton.outline:hover {
+  background:  rgb(var(--pale-grey))
+}
+
+.secondaryButton.outline{
+  background: transparent;
+  border: 1px solid rgb(var(--pale-grey));
+  color: rgb(var(--pale-grey));
+}
+
+.disabledButton,
+.disabledButton.outline:hover {
+  background: rgb(var(--pale-grey));
+  color: rgb(var(--bluey-grey));
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  cursor: no-drop;
+}
+
+.disabledButton.outline{
+  border: 1px solid  rgb(var(--dusk));
+  background: transparent;
+  color: rgb(var(--bluey-grey));
+}
+
+.small {
+  height: 3.2rem;
+  line-height: 3rem;
+}
+
+.icon {
+  min-width: 5rem;
+  padding: 0rem 1.5rem;
+  display: grid;
+  align-items: center;
+}
+
+.loading:after{
+  content:"";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  box-sizing: border-box;
+  top: calc(50% - 12.5px);
+  left: calc(50% - 12.5px);
+  z-index: 10;
+}
+.buttonDropdown{
+  display: grid;
+  grid-template-columns: auto 3rem;
+  border-radius: 3px;
+  align-items: center;
+}
+.buttonDropdown .dropDownOptions{
+  justify-self: center;
+  align-self: center;
+}
+.dropDownOptions svg {
+  fill: rgb(var(--primary-main-dark15));
+}
+.dropdownName{
+  padding-left: 1rem;
+}
+.buttonOptions{
+  min-width: 13.4rem;
+  max-width: 20rem;
+  box-shadow: var(--shadow);
+}
+.dropdownSegment{
+  display: grid;
+}
+.dropdownLink{
+  display: grid;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1rem;
+}
+.dropdownLink:last-child{
+  border-bottom: none;
+}
+.dropdownLink:hover{
+  background-color: rgb(var(--pale-grey), 0.5);
+  cursor: pointer;
+}
+

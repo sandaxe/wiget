@@ -1,0 +1,18 @@
+.link{
+  user-select: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.1px;
+  color: rgb(57, 137, 255);
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.notDisabled {
+  cursor: pointer;
+  opacity: 1;
+}

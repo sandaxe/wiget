@@ -1,0 +1,32 @@
+.iconContainer {
+  display: grid; 
+  justify-content: center;
+  align-items: center;
+  /* width: min-content; */
+}
+
+.box {
+  display: grid; 
+  justify-content: center;
+  align-items: center;
+  height: 3.2rem;
+  width: 3.2rem;
+  border: solid 1px rgb(181, 186, 197);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.iconSvg {
+  fill: rgb(115, 125, 143);
+  display: grid;
+}
+
+.box:hover {
+  background: rgb(244, 245, 248);
+  box-shadow: 0px 2px 5px rgba(224, 227, 231, 0.7);
+  border-color: rgb(164, 170, 183);
+}
+
+.pointer {
+  cursor: pointer;
+}

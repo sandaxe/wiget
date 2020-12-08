@@ -1,0 +1,88 @@
+.modalWrapper {
+    position: fixed;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+    z-index: 10;
+}
+.modalContainer {
+    display: grid;
+    position: fixed;
+    z-index: 103;
+    grid-template-rows: 5.2rem 1fr 5.6rem;
+    width: 50rem;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+    transition: all 0.3s ease;
+    max-height: 80vh;
+    /* height: max-content; */
+    text-align: left;
+    border-radius: 3px;
+}
+.modalHeader {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1.2rem;
+    padding: 0 20px;
+    background: #FFF;
+    border-bottom: 1px solid rgb(224, 227, 231);
+}
+.modalHeader svg {
+    cursor: pointer;
+}
+.modalContent {
+    padding: 20px;
+    display: grid;
+    background: #FFF;
+    min-height: 5rem;
+}
+.modalFooter {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 12px;
+    justify-content: end;
+    padding: 12px 20px;
+    border-top: 1px solid rgb(224, 227, 231);
+
+}
+.modalFooter .secondaryButton {
+    grid-column-start: -2;
+    grid-column-end: -3;
+}
+.modalFooter .normalButton {
+    grid-column-start: -1;
+    grid-column-end: -2;
+}
+.headerTypeModal {
+    grid-template-rows: 5.2rem auto;
+}
+
+.footerTypeModal {
+    grid-template-rows: auto 5.6rem;
+}
+
+.large {
+    width: 80rem;
+}
+
+.small {
+    width: 40rem;
+}
+
+.big{
+    width: 110rem;
+}
+
+.full {
+    width: 100%;
+    max-height: 100%;
+}

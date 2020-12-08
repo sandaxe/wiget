@@ -1,0 +1,15 @@
+table {
+  border: none;
+}
+
+.thead tr{
+  background: #FFF;
+}
+
+th{
+  background: #FFF;
+}
+
+tbody tr {
+  cursor: pointer;
+}

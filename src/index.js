@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import registerServiceWorker from './registerServiceWorker';
+import App from './App';
+import installApp from './install.app';
+import './shared/polyfil';
+import './styles/reset.css';
+import './styles/index.css';
+import './styles/app.css';
+import './styles/loader.css';
+import 'react-multi-carousel/lib/styles.css';
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
+installApp();

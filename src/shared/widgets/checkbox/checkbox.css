@@ -1,0 +1,142 @@
+/* The checkBoxContainer */
+.checkBoxContainer {
+  display: grid;
+  position: relative;
+  grid-column-gap: 8px;
+  grid-template-columns: 16px auto;
+  width: max-content;
+}
+
+.checkBoxContent{
+  align-self: start;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.checkBoxLabel{
+  align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.checkBoxContainer:focus .notReadOnly,
+.checkBoxContainer:hover .notReadOnly{
+  box-shadow: 0px 2px 5px rgba(224, 227, 231, 0.7);
+  cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.checkBoxContainer input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 1.6rem;
+  width: 1.6rem;
+  background: white;
+  border: 1px solid rgb(115, 125, 143);
+  border-radius: 2px;
+  display: block;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkBoxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkBoxContainer input:disabled ~ .filledInBox:after{
+  border: solid rgb(181, 186, 197);
+  border-width: 0 1px 1px 0;
+}
+
+/* Style the checkmark/indicator */
+.checkBoxContainer .checkmark:after {
+  left: 0.5rem;
+  top: 0.2rem;
+  width: 0.3rem;
+  height: 0.8rem;
+  border: 1px solid rgb(115, 125, 143);
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.checkBoxContainer .focusStyle{
+  border: 1px solid rgb(25, 197, 112);
+  box-shadow: 0px 2px 5px rgba(224, 227, 231, 0.7);
+}
+
+/* Style the filled/disabled checkbox*/
+
+.checkBoxContainer input:checked ~ .filledInBox {
+  background: rgb(25, 197, 112);
+  border: 1px solid rgb(25, 197, 112);
+}
+
+.checkBoxContainer input:checked ~ .notFilled{
+  border: 1px solid rgb(115, 125, 143);
+}
+
+.checkBoxContainer input:disabled ~ .filledInBox,
+.checkBoxContainer input:disabled ~ .notFilled {
+  background: rgb(244, 245, 248);
+  border: 1px solid rgb(244, 245, 248);
+}
+
+.disabled{
+  color: rgb(181, 186, 197);
+}
+
+.checkBoxContainer .notFilled:after {
+  border: solid rgb(25, 197, 112);
+  border-width: 0 1px 1px 0;
+}
+
+.checkBoxContainer .filledInBox:after {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+}
+
+/* Style the filled/disabled and readonly checkbox*/
+
+.checkBoxContainer input:disabled ~ .readOnly:after{
+  border: solid rgb(25, 197, 112);
+  background: rgb(204, 248, 226);
+  border-width: 0 1px 1px 0;
+}
+
+.checkBoxContainer input:checked ~ .readOnly {
+  background: rgb(204, 248, 226);
+  border: 1px solid rgb(204, 248, 226);
+}
+
+
+.checkBoxContainer .readOnly {
+  background: rgb(244, 245, 248);
+  border: none;
+}
+
+.checkBoxContainer .readOnly:after {
+  border: solid rgb(25, 197, 112);
+  border-width: 0 1px 1px 0;
+}
+
+.strikeOnSelect.checkBoxLabel{
+  text-decoration: line-through;
+  color: rgb(181, 186, 197);
+}
+
+.pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,350 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  width: auto;
+}
+.col-none,
+.col_none {
+  flex-basis: 0px;
+}
+.col-1,
+.col_1 {
+  flex-grow: 1;
+}
+.col-2,
+.col_2 {
+  flex-grow: 2;
+}
+.col-3,
+.col_3 {
+  flex-grow: 3;
+}
+.col-4,
+.col_4 {
+  flex-grow: 4;
+}
+.col-5,
+.col_5 {
+  flex-grow: 5;
+}
+.col-6,
+.col_6 {
+  flex-grow: 6;
+}
+.col-7,
+.col_7 {
+  flex-grow: 7;
+}
+.col-8,
+.col_8 {
+  flex-grow: 8;
+}
+.col-9,
+.col_9 {
+  flex-grow: 9;
+}
+.col-10,
+.col_10 {
+  flex-grow: 10;
+}
+
+.flex-row,
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.flex-row .col,
+.flex_row .col {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.flex-row10,
+.flex_row10 {
+  display: flex;
+  flex-direction: row;
+  margin-left: -14px;
+  margin-right: -14px;
+}
+.flex-row10 > .col,
+.flex_row10 > .col {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.flex-row-reverse,
+.flex_row_reverse {
+  flex-direction: row-reverse;
+}
+.flex-wrap,
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.flex-center-center,
+.flex_center_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-justify-end,
+.flex_justify_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-start-center,
+.flex_start_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-end-center,
+.flex_end_center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-v-center,
+.flex_v_center {
+  display: flex;
+  align-items: center;
+}
+.flex-stretch,
+.flex_stretch {
+  display: flex;
+  align-items: stretch;
+}
+
+.onboard-l-cont,
+.onboard_l_cont {
+  text-align: center;
+}
+.onboardRcont {
+  padding: 40px 26px !important;
+}
+.onboardRcont h4 {
+  font-size: 20px !important;
+}
+.onboard-l-cont h3,
+.onboard_l_cont h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Proxima-Regular";
+}
+.onboard-l-cont h4 strong {
+  font-family: "Proxima-Semibold";
+}
+.onboard-l-cont h4,
+.onboard_l_cont h4 {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Proxima-Regular";
+  color: #333333;
+}
+.onboard-l-cont h6,
+.onboard_l_cont h6 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 6px;
+  font-family: "Proxima-Semibold";
+  color: #333333;
+}
+.btnContainer {
+  text-align: center;
+  margin: 50px 0px 0px;
+}
+.btnContainer button.greenBtn {
+  height: 50px;
+  width: auto;
+  padding: 0px 56px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  font-family: Roboto-Medium;
+  background-image: linear-gradient(to right, #60e0b2, #1dcc8c);
+  color: #ffffff;
+}
+
+.btnContainer button.transpBtn {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #60e0b2 0%, #1dcc8c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 0px 56px;
+  font-family: Roboto-Medium;
+}
+
+.onboard-l-cont p,
+.onboard_l_cont p {
+  text-align: center;
+  font-size: 17px;
+  font-family: "Proxima-Thin";
+  margin-top: 15px;
+}
+.onboard-l-cont img.onb-bg,
+.onboard_l_cont img.onb_bg {
+  width: 100%;
+}
+.onboardImg {
+  margin-top: 67px;
+  margin-bottom: 30px;
+}
+.vh100 {
+  min-height: 100vh;
+}
+.onboard-l-cont .onb-logo,
+.onboard_l_cont .onb_logo {
+  width: 89px;
+  margin: 92px auto 24px;
+}
+.onboard-l-cont .onb-logo img,
+.onboard_l_cont .onb_logo img {
+  width: 100%;
+}
+.onboard-l-cont .onb-logo p,
+.onboard_l_cont .onb_logo p {
+  padding: 2px 0px 0px 25px;
+  font-size: 24px;
+}
+.onboard-r-cont,
+.onboard_r_cont {
+  background-color: #fffaf3;
+  padding: 82px 26px;
+}
+.bgMildRed {
+  background-color: #fffaf3;
+}
+.bgMildBlue {
+  background-color: #dde7f5;
+}
+.bgWhite {
+  background-color: #ffffff;
+}
+.onboard-r-cont h5,
+.onboard_r_cont h5 {
+  font-family: Proxima-Regular;
+  letter-spacing: 0.42px;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+}
+.onboard-r-cont h4 {
+  color: #333333;
+  font-size: 18px;
+  text-align: center;
+  font-family: Proxima-Regular;
+}
+.onboard-r-cont h6,
+.onboard_r_cont h6 {
+  font-family: Proxima-Regular;
+  letter-spacing: 0.38px;
+  color: #333333;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 40px;
+}
+.onboard-r-cont h6 strong,
+.onboard_r_cont h6 strong {
+  font-family: Proxima-Semibold;
+}
+.formControlPlaceholder {
+  font-size: 12px;
+  letter-spacing: 0.26px;
+  color: #333333;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 599px) {
+  .col-5,
+  .col_5 {
+    width: 100%;
+  }
+  .flex-xs-col {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .col-5,
+  .col_5 {
+    width: 100%;
+  }
+  .flex-sm-col {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .col-5,
+  .col_5 {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .col-5,
+  .col_5 {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-5,
+  .col_5 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 567px) and (min-width: 280px) {
+  .onboard-l-cont .onb-logo,
+  .onboard_l_cont .onb_logo {
+    width: 89px;
+    margin: 40px auto 20px;
+  }
+  .onboard-l-cont img.onb-bg,
+  .onboard_l_cont img.onb_bg {
+    display: none;
+  }
+  .onboard-l-cont p,
+  .onboard_l_cont p {
+    text-align: center;
+    display: none;
+    font-size: 17px;
+    font-family: "Proxima-Thin";
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .onboard-r-cont,
+  .onboard_r_cont {
+    background-color: #fff;
+    padding: 20px 10px;
+  }
+  .onboard-l-cont h6,
+  .onboard_l_cont h6 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 990px) and (min-width: 568px) {
+  .flex-sm-col {
+    display: grid;
+  }
+  .onb-bg{
+    display: none;
+  }
+  .col-sm-12{
+    width: 100% !important;
+  }
+  .col-sm-5{
+    width: 100%;
+  }
+  .onboard-r-cont{
+    background-color: #ffffff;
+  }
+  .SmHidden{
+    display: none;
+  }
+  .bgMildRed {
+    background-color: #ffffff;
+}
+}

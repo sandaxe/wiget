@@ -1,0 +1,62 @@
+.toastBox{
+  background: rgb(var(--primary-main-light45));
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: var(--space-8);
+  padding: var(--space-8) var(--space-12);
+  font-size: var(--marutham-font-size);
+  color: rgb(var(--gray-3));
+}
+
+.toastBox .icon{
+  background: rgb(var(--primary-left-light15));
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  color: rgb(var(--white));
+  margin-top: calc(var(--space-4) / 2);
+}
+
+.toastBox.error{
+  color: rgb(var(--secondary-4-main));
+  background: rgb(var(--secondary-4-light45));
+}
+
+.toastBox.error .icon{
+  background: rgb(var(--secondary-4-main));
+}
+
+.toastBox .message {
+  display: grid;
+  grid-row-gap: var(--space-12);
+}
+
+.toastBox .message li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: var(--space-8);
+}
+
+.toastBox .message li .text{
+  word-break: break-word;
+}
+
+.toastBox .closeIcon{
+  display: grid;
+  align-items: center;
+}
+
+.toastBox span{
+  display: grid;
+}
+
+.toastBox.info svg{
+  fill: rgb(var(--primary-left-dark15));
+}
+
+.toastBox.error svg{
+  fill: rgb(var(--secondary-4-light15));
+}

@@ -1,0 +1,13 @@
+.signatureBody{
+  align-self: center;
+  justify-self: center;
+  background: white;
+  max-width:100%;
+}
+.signatureBodyReadOnly{
+  align-self: center;
+  justify-self: center;
+  background: rgb(244, 245, 248);
+  pointer-events: none;
+  max-width:100%;
+}

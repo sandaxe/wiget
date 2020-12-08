@@ -1,0 +1,463 @@
+.button{
+  position: relative;
+  font-size: 14px;
+  min-width: 3rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  border-radius: 3px;
+  padding: 0 16px;
+  background-color: rgb(244, 245, 248);
+  border: solid 1px rgb(181, 186, 197);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.button.oval{
+  border-radius: 5rem;
+}
+
+.button:hover{
+  box-shadow: 0px 2px 5px rgba(224, 227, 231, 0.7);
+  border-color: rgb(164, 170, 183);
+}
+
+.button:focus,
+.button.splitButton:focus{
+  border-color: rgb(132, 140, 157);
+  background-color: rgb(224, 227, 231);
+}
+
+.button:active,
+.button.splitButton:active,
+.button.splitButton:hover .menuTrigger{
+  background-color: rgb(224, 227, 231);
+}
+
+.button:disabled,
+.button.splitButton.disabled{
+  color: rgba(38, 48, 69, 0.3);
+  background-color: rgb(244, 245, 248);
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.3;
+}
+
+/* Button variants */
+.button.primary{
+  color:#FFF;
+  background: none;
+  border: none;
+  background-image: linear-gradient(60deg, #60e0b2, #1dcc8c);
+}
+
+.button.primary:hover{
+  border: none;
+}
+
+.button.primary:focus,
+.button.primary:active,
+.button.splitButton.primary:focus .menuTrigger,
+.button.splitButton.primary:hover .menuTrigger{
+  background-color: linear-gradient(60deg, #60e0b2, 0.1, #1dcc8c, 0.1);
+}
+
+.button.primary:disabled,
+.button.splitButton.primary.disabled{
+  background-image: linear-gradient(60deg, #60e0b2, 0.1, #1dcc8c, 0.1);
+}
+
+.button.secondary{
+  color: rgb(25, 197, 112);
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1dcc8c;
+}
+
+.button.secondary:disabled {
+  opacity: 0.3;
+}
+/* .button.secondary:hover{
+  border-color: var(--primary-background);
+} */
+
+.button.secondary:focus,
+.button.secondary:active,
+.button.splitButton.secondary:focus,
+.button.splitButton.secondary:active,
+.button.splitButton.secondary:hover .menuTrigger,
+.button.splitButton.secondary:hover .menuTrigger{
+  /* border-color: transparent; */
+  background-image: linear-gradient(60deg, #60e0b2, 0.2, #1dcc8c, 0.2);
+}
+
+.button.ghost{
+  color: rgb(0, 95, 236);
+  padding: 0 4px;
+  min-width: auto;
+  width: min-content;
+  border-color:transparent;
+  background: none;
+  height: auto;
+  line-height: unset;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.button.ghost:hover{
+  color: rgb(0, 64, 159);
+  box-shadow: none;
+}
+
+.button.ghost:focus{
+  color: rgb(0, 64, 159);
+  border-color: rgb(0, 64, 159);
+}
+
+.button.ghost:active{
+  border-color: transparent;
+}
+
+.button.ghost:disabled{
+  color:rgb(0, 95, 236, 0.3);
+}
+
+.button.iconButton{
+  padding: 8px;
+  min-width: auto;
+  height: 3.2rem;
+  width: 3.2rem;
+  background: transparent;
+  padding: unset;
+  display: flex;
+  justify-content: center;
+}
+
+.button.iconButton:hover{
+  background: rgb(244, 245, 248);
+}
+
+.button.splitButton{
+  display: inline-grid;
+  grid-template-columns: 1fr 3.2rem;
+  outline: none;
+}
+
+.button.splitButton,
+.button.splitButton.tiny,
+.button.splitButton.small,
+.button.splitButton.medium,
+.button.splitButton.large{
+  padding: 0;
+  min-width: auto;
+}
+
+.button.splitButton > * {
+  display: inline-block;
+}
+
+.button.splitButton > .button{
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  height: 100%;
+}
+
+.button.splitButton .menuTrigger{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: inherit;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-left: 1px solid #FFF;
+}
+
+.button.splitButton.tiny .menuTrigger{
+  height: 2rem;
+  width: 2rem;
+}
+
+.button.splitButton.small .menuTrigger{
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.button.splitButton.medium .menuTrigger{
+  height: 4rem;
+  width: 4rem;
+}
+
+.button.splitButton.large .menuTrigger{
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.button.splitButton .menuTrigger:focus,
+.button.splitButton .menuTrigger:hover{
+  background-color: rgb(224, 227, 231);
+}
+
+
+/*
+.button:not(.iconButton) svg{
+  width: 1rem;
+  height: 1rem;
+  margin-right: var(--space-8);
+} */
+
+.button.iconButton svg {
+  /* width: 1.6rem;
+  height: 1.6rem; */
+  margin: unset;
+  display: grid;
+}
+
+.button.iconButton.tiny svg,
+.button.iconButton.small svg,
+.button.iconButton.medium svg,
+.button.iconButton.large svg{
+  margin: auto;
+}
+
+.button.iconButton:disabled svg{
+  fill: rgb(181, 186, 197);
+}
+
+.button.splitButton .menuTrigger svg{
+  margin: unset;
+}
+
+/* Button sizes */
+.button.tiny{
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: normal;
+  height: 2rem;
+  line-height: 2rem;
+  min-width: 6rem;
+  padding: 0 12px;
+  border-radius: 5px;
+}
+
+.button.small{
+  min-width: 8rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.button.medium{
+  font-size: 16px;
+  min-width: 16rem;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 24px;
+}
+
+.button.large{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  min-width: 16rem;
+  padding: 0 28px;
+}
+
+.button.ghost.tiny,
+.button.ghost.small,
+.button.ghost.medium,
+.button.ghost.large{
+  min-width: auto;
+  padding: 0 4px;
+}
+
+.button.iconButton,
+.button.iconButton.tiny,
+.button.iconButton.small,
+.button.iconButton.medium,
+.button.iconButton.large{
+  min-width: auto;
+}
+
+
+/* .button.tiny:not(.iconButton) svg,
+.button.small:not(.iconButton) svg{
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 4px;
+}
+
+.button.large:not(.iconButton) svg{
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 12px;
+} */
+
+.button:disabled svg,
+.button.splitButton.disabled svg{
+  fill: rgba(38, 48, 69, 0.3);
+}
+
+.button.primary svg{
+  fill: #FFF;
+}
+
+.button.secondary svg{
+  fill: rgb(32, 156, 125);
+}
+
+.menuDropdown{
+  background: #FFF;
+  max-height: 40rem;
+  box-shadow: 0px 2px 10px rgba(115, 125, 143, 0.2);
+  margin-top: 0.6rem;
+}
+
+.menuItem{
+  color: rgb(38, 48, 69);
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #FFF;
+}
+
+.menuItem:hover,
+.menuItem:active{
+  background-color: rgb(244, 245, 248);
+}
+
+/* Group button */
+.buttonGroups{
+  display: inline-block;
+}
+
+.groupButton{
+  min-width: 6rem;
+  height: 3.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(181, 186, 197);
+  padding: 0 16px;
+  text-align: center;
+  color: rgb(38, 48, 69);
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.pagination .groupButton{
+  height: 2.4rem;
+  color: rgb(70, 81, 102);
+  border-color: rgb(224, 227, 231);
+  padding: 0 12px;
+  min-width: unset;
+}
+
+.groupButton:not(:first-child){
+  border-left: none;
+}
+
+.groupButton:first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.groupButton:last-child{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.groupButton:focus,
+.groupButton:hover{
+  background: rgb(244, 245, 248);
+}
+
+.pagination .groupButton:focus,
+.pagination .groupButton:hover{
+  background: rgb(250, 251, 253);
+}
+
+.groupButton.active{
+  background: rgb(25, 197, 112);
+  border-color: rgb(25, 197, 112);
+  color: #FFF;
+}
+
+.pagination .groupButton.active{
+  color: rgb(70, 81, 102);
+}
+
+.pagination .groupButton.active,
+.pagination .groupButton.active:hover,
+.pagination .groupButton.active:focus{
+  border-color: rgb(224, 227, 231);
+  background: rgb(224, 227, 231);
+}
+
+.groupButton.active + .groupButton.active {
+  border-left: 1px solid #FFF
+}
+
+.groupButton.active:hover,
+.groupButton.active:focus{
+  background: #1dcc8c;
+}
+
+.groupButton:disabled{
+  background: #FFF;
+  cursor: not-allowed;
+  color: rgba(38, 48, 69, 0.3);
+  border-color: rgba(181, 186, 197, 0.3);
+  border-right-color: rgba(181, 186, 197);
+}
+
+.pagination .groupButton:disabled {
+  background: #FFF;
+  cursor: not-allowed;
+  color: rgba(38, 48, 69, 0.3);
+  border-right-color: rgba(224, 227, 231);
+}
+
+.loading:after{
+  content:"";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 3px solid rgb(25, 197, 112);
+  box-sizing: border-box;
+  top: calc(50% - 12.5px);
+  left: calc(50% - 12.5px);
+  z-index: 10;
+}
+
+@media (max-width: 567px) and (min-width: 280px) {
+  .button.large{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    height: 4.8rem;
+    z-index: 0;
+    line-height: 4.8rem;
+    min-width: 0rem;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 991px) {
+  .button.large{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    min-width: 16rem;
+    padding: 0 20px;
+  }
+}
