@@ -94,9 +94,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "start-dev": "node scripts/start.js",
-    "build": "GENERATE_SOURCEMAP=false node scripts/build.js",
+    "build": "node scripts/build.js",
     "profile": "PROFILE=true node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
